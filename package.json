@@ -1,29 +1,12 @@
 {
-  "name": "@invertase/react-native-apple-authentication",
-  "version": "2.3.0",
+  "name": "@react-native-oh-tpl/react-native-apple-authentication",
+  "version": "2.3.0-0.0.1",
   "author": "Invertase <oss@invertase.io> (http://invertase.io)",
   "description": "A complete Apple Authentication services API for React Native iOS apps.",
   "homepage": "https://github.com/invertase/react-native-apple-authentication",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "scripts": {
-    "tsc:compile": "tsc --noEmit",
-    "build": "genversion --semi lib/version.js",
-    "build:all": "yarn build:clean && yarn build && yarn example:build:android && yarn example:build:ios",
-    "build:clean": "rimraf ios/build android/build example/android/app/build example/ios/build example/macos/build",
-    "build:docs": "typedoc --excludeExternals --out typedocs --plugin typedoc-plugin-markdown --hideBreadcrumbs --entryPoints lib/index.d.ts",
-    "precommit": "yarn prepare && yarn build:all",
-    "prepare": "yarn build && yarn tsc:compile && yarn example:prepare",
-    "example:prepare": "cd example && yarn && cd ios && (pod install || true) && cd ../macos && (pod install || true)",
-    "example:build:android": "cd example/android && ./gradlew assembleDebug",
-    "example:build:ios": "cd example && (xcodebuild -workspace ios/RNAppleAuthExample.xcworkspace -scheme RNAppleAuthExample -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=YES | xcbeautify || true)",
-    "example:build:macos": "cd example && (xcodebuild -workspace macos/RNAppleAuthExample.xcworkspace -scheme RNAppleAuthExample -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=YES | xcbeautify || true)",
-    "example:start": "cd example && yarn start",
-    "example:ios": "cd example && yarn ios",
-    "example:macos": "cd example && yarn macos",
-    "example:android": "cd example && yarn android",
-    "shipit": "echo no luck running it like this, try ./node_modules/.bin/np"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/invertase/react-native-apple-authentication"
@@ -60,5 +43,13 @@
   },
   "engines": {
     "node": ">=14"
+  },
+  "harmony": {
+    "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    },
+    "alias": "@invertase/react-native-apple-authentication"
   }
 }

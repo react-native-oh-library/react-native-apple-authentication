@@ -626,3 +626,38 @@ export interface AppleAuthAndroid {
   ResponseType: typeof AndroidResponseType;
 }
 export const appleAuthAndroid: AppleAuthAndroid;
+
+export interface appleAuthHarmony {
+  /**
+   * A boolean value of whether Apple Authentication is supported on this API version.
+   *
+   * The Apple authentication process requires API 19+ to work correctly.
+   */
+  isSupported: boolean;
+
+  /**
+   * Prepare the module for sign in. This *must* be called before `appleAuthAndroid.signIn()`;
+   *
+   * @see https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/incorporating_sign_in_with_apple_into_other_platforms#3332113
+   */
+  configure(configObject: AndroidConfig): void;
+
+  /**
+   * Open browser window to begin user sign in. *Must* call `appleAuthAndroid.configure(options)` first.
+   */
+  signIn(): Promise<AndroidSigninResponse>;
+
+  Error: AndroidError;
+
+  /**
+   * The amount of user information requested from Apple. Valid values are `name` and `email`.
+   * You can request one, both, or none.
+   */
+  Scope: typeof AndroidScope;
+
+  /**
+   * The type of response requested. Valid values are `code` and `id_token`. You can request one or both.
+   */
+  ResponseType: typeof AndroidResponseType;
+}
+export const appleAuthHarmony: appleAuthHarmony;
