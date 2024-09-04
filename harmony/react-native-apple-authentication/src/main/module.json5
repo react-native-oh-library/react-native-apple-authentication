@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "apple_auth",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

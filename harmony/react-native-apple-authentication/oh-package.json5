@@ -1,0 +1,14 @@
+{
+  "name": "@react-native-oh-tpl/react-native-apple-authentication",
+  "version": "2.3.0-0.0.1",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony",
+    "@ohos/crypto-js": "2.0.3"
+  },
+  "devDependencies": {},
+  "dynamicDependencies": {}
+}
