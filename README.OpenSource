@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-iphone-screen-helper",
+        "License": "MIT",
+        "License File": "https://github.com/chlee1001/react-native-iphone-screen-helper/blob/master/LICENSE",
+        "Version Number": "2.1.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/chlee1001/react-native-iphone-screen-helper",
+        "Description": "A library to help you design your react-native app for the iPhone"
+    }
+]
