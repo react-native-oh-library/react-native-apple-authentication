@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-apple-authentication",
+        "License": "MIT",
+        "License File": "https://github.com/invertase/react-native-apple-authentication/blob/main/LICENSE",
+        "Version Number": "2.4.0",
+		"Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/invertase/react-native-apple-authentication",
+        "Description": "A complete Apple Authentication services API for React Native iOS apps."
+    }
+]
